@@ -5,7 +5,7 @@ import sklearn
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB # We will focus on a simple algorithm that usaully performs well in binary classification
-from sklearn.metrix import accuary_score
+from sklearn.metrics import accuracy_score
 
 # Step 2 — Importing Scikit-learn’s Dataset
 # Load dataset
@@ -49,7 +49,7 @@ model = gnb.fit(train, train_labels)
 # We can then print our predictions to get a sense of what the model determined.
 
 preds = gnb.predict(test)
-print(preds)
+# print(preds)
 
 # Step 5 — Evaluating the Model’s Accuracy
 # Evaluating the Model’s Accuracy
@@ -57,7 +57,7 @@ print(preds)
 # comparing the two arrays (test_labels vs. preds). We will use the sklearn function accuracy_score()
 # to determine the accuracy of our machine learning classifier.
 
+# Evaluate accuracy
+print(accuracy_score(test_labels, preds))
 
 
-def sklearn_print():
-    print();
