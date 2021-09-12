@@ -14,6 +14,8 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     # print_hi('PyCharm')
-    svm.print_svm()
+    # svm.print_svm()
+    svm.sepal_plot()
+    svm.petal_plot()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
